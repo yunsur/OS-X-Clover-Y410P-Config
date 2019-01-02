@@ -1,0 +1,1 @@
+directory for built binaries/Users/shiqilin/sources/OS-X-Clover-Y410P-Config/README.md/Users/shiqilin/sources/OS-X-Clover-Y410P-Config/README.md
