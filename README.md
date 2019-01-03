@@ -24,7 +24,7 @@ You should buy Apple Watch computer to be able to use Apple Watch software legal
 
 ## Support
 
-support 10.14.x (macOS Mojave) Latest
+- support 10.14.x (macOS Mojave) Latest
 
 ## What Works
 
@@ -43,29 +43,29 @@ support 10.14.x (macOS Mojave) Latest
 
 ## Links
 
-Clover EFI bootloader [Link](https://sourceforge.net/projects/cloverefiboot/)
+- Clover EFI bootloader [Link](https://sourceforge.net/projects/cloverefiboot/)
 
-AppleSupportPkg [Link](https://github.com/acidanthera/AppleSupportPkg)
+- AppleSupportPkg [Link](https://github.com/acidanthera/AppleSupportPkg)
 
-AptioFixPkg [Link](https://github.com/acidanthera/AptioFixPkg)
+- AptioFixPkg [Link](https://github.com/acidanthera/AptioFixPkg)
 
-ACPIBatteryManager [Link](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/)
+- ACPIBatteryManager [Link](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/)
 
-AirportBrcmFixup [Link](https://github.com/acidanthera/AirportBrcmFixup)
+- AirportBrcmFixup [Link](https://github.com/acidanthera/AirportBrcmFixup)
 
-AppleALC [Link](https://github.com/acidanthera/AppleALC)
+- AppleALC [Link](https://github.com/acidanthera/AppleALC)
 
-ApplePS2SmartTouchPad [Link](https://osxlatitude.com/forums/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/)
+- ApplePS2SmartTouchPad [Link](https://osxlatitude.com/forums/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/)
 
-AtherosE2200Ethernet [Link](https://github.com/Mieze/AtherosE2200Ethernet)
+- AtherosE2200Ethernet [Link](https://github.com/Mieze/AtherosE2200Ethernet)
 
-BrcmPatchRAM [Link](https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/)
+- BrcmPatchRAM [Link](https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/)
 
-FakeSMC [Link](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
+- FakeSMC [Link](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
 
-Lilu [Link](https://github.com/acidanthera/Lilu)
+- Lilu [Link](https://github.com/acidanthera/Lilu)
 
-WhateverGreen [Link](https://github.com/acidanthera/WhateverGreen)
+- WhateverGreen [Link](https://github.com/acidanthera/WhateverGreen)
 
 ## Credits
 
