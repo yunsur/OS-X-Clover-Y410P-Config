@@ -67,6 +67,8 @@ You should buy Apple Watch computer to be able to use Apple Watch software legal
 
 - WhateverGreen [Link](https://github.com/acidanthera/WhateverGreen)
 
+- Enable macOS HiDPI [Link](https://github.com/xzhih/one-key-hidpi)
+
 ## Credits
 
 - panybbib
