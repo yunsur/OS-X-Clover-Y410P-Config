@@ -342,7 +342,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>AppleRTC_patch</string>
+				<string>AppleRTC_Patch</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -356,7 +356,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>IOAHCIBlockStorage, Apple SSD</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
