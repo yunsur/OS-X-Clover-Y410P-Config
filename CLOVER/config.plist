@@ -12,8 +12,6 @@
 				<true/>
 				<key>FixIPIC</key>
 				<true/>
-				<key>FixLAN</key>
-				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -228,10 +226,12 @@
 		<key>SortedOrder</key>
 		<array>
 			<string>SSDT.aml</string>
+			<string>SSDT-ARPT.aml</string>
 			<string>SSDT-BAT.aml</string>
 			<string>SSDT-EH01.aml</string>
 			<string>SSDT-EH02.aml</string>
 			<string>SSDT-FN.aml</string>
+			<string>SSDT-GIGE.aml</string>
 			<string>SSDT-HDEF.aml</string>
 			<string>SSDT-HDAU.aml</string>
 			<string>SSDT-IGPU.aml</string>
@@ -240,10 +240,10 @@
 			<string>SSDT-MCHC.aml</string>
 			<string>SSDT-PNLF.aml</string>
 			<string>SSDT-PRW.aml</string>
+			<string>SSDT-RMKB.aml</string>
 			<string>SSDT-SMBUS.aml</string>
 			<string>SSDT-SATA.aml</string>
 			<string>SSDT-UIAC.aml</string>
-			<string>SSDT-WIFI.aml</string>
 			<string>SSDT-XHC.aml</string>
 			<string>SSDT-XSEL.aml</string>
 			<string>SSDT-XOSI.aml</string>
