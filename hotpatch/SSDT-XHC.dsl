@@ -12,8 +12,7 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "XHC", 0)
             If (!Arg2) { Return (Buffer() { 0x03 } ) }
             Local0 = Package()
             {
-                "AAPL,slot-name", "PCI Express",
-                "device_type", Buffer () { "USB Controller" },
+                "AAPL,slot-name", "Built In",
                 "name", Buffer () {"Intel Lynx Point PCH - USB 3.0 xHCI Controller"},
                 "model", Buffer () {"Intel Lynx Point PCH - USB 3.0 xHCI Controller"},
                 "RM,pr2-force", Buffer() { 0, 0, 0, 0 },
