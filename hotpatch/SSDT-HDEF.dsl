@@ -15,6 +15,7 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "HDEF", 0)
             "model", Buffer () {"Realtek ALC282 Audio Controller"},
             "layout-id", Buffer() { 41, 0, 0, 0 },
             "hda-gfx", Buffer() { "onboard-1" },
+            "AFGLowPowerState", Buffer () { 0x01, 0x00, 0x00, 0x00 }, 
             "PinConfigurations", Buffer() { },
         })
    }
