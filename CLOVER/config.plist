@@ -207,22 +207,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>DropTables</key>
-		<array>
-			<dict>
-				<key>Signature</key>
-				<string>MATS</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
-		</array>
-		<key>SSDT</key>
-		<dict>
-			<key>DropOem</key>
-			<false/>
-		</dict>
 		<key>SortedOrder</key>
 		<array>
 			<string>SSDT.aml</string>
@@ -241,8 +225,8 @@
 			<string>SSDT-PNLF.aml</string>
 			<string>SSDT-PRW.aml</string>
 			<string>SSDT-RMKB.aml</string>
-			<string>SSDT-SMBUS.aml</string>
 			<string>SSDT-SATA.aml</string>
+			<string>SSDT-SMBUS.aml</string>
 			<string>SSDT-UIAC.aml</string>
 			<string>SSDT-XHC.aml</string>
 			<string>SSDT-XSEL.aml</string>
@@ -252,15 +236,13 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-lilubetaall brcmfx-country=US -disablegfxfirmware</string>
+		<string>brcmfx-country=US -disablegfxfirmware</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Timeout</key>
 		<integer>3</integer>
-		<key>XMPDetection</key>
-		<false/>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -313,15 +295,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				igKEwHRC
-				</data>
+				<data>igKEwHRC</data>
 				<key>MatchOS</key>
 				<string>10.14.x</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtC
-				</data>
+				<data>igKEwOtC</data>
 			</dict>
 		</array>
 		<key>KextsToPatch</key>
