@@ -4,7 +4,7 @@
 DefinitionBlock ("", "SSDT", 2, "Y410P", "GIGE", 0x00003000)
 {
     External (_SB.PCI0.RP04, DeviceObj)
-    External (_SB.PCI0.RP04.PXSX, DeviceObj)    // (from opcode)
+    External (_SB.PCI0.RP04.PXSX, DeviceObj)
     
     Scope (_SB.PCI0.RP04.PXSX)
     {

@@ -6,11 +6,12 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "BAT", 0)
     // Override for ACPIBatteryManager.kext
     
     External(_SB_.BAT1, DeviceObj)
+    
     Name(_SB.BAT1.RMCF, Package()
     {
         "StartupDelay", 10,
     })
-
+    
     External (_SB.PCI0.LPCB.ECOK, MethodObj)
     External (_SB.PCI0.LPCB.EC0.ENDD, FieldUnitObj)
     External (_TZ.THLD, UnknownObj)

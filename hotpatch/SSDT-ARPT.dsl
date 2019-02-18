@@ -4,7 +4,7 @@
 DefinitionBlock ("", "SSDT", 2, "Y410P", "ARPT", 0x00003000)
 {
     External (_SB.PCI0.RP05, DeviceObj) 
-    External (_SB.PCI0.RP05.PXSX, DeviceObj)    // (from opcode)
+    External (_SB.PCI0.RP05.PXSX, DeviceObj)
    
     Scope (_SB.PCI0.RP05.PXSX)
     {         

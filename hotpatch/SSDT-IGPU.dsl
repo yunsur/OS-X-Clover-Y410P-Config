@@ -20,25 +20,24 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "IGPU", 0)
                 // Enable FBPatcher  
                 "framebuffer-patch-enable", Buffer() { 0x01, 0x00, 0x00, 0x00 },
                 
-                // Enable HDMI 2.0
+                // HDMI in UHD resolution with 60 fps
                 "enable-hdmi20", Buffer() { 0x01, 0x00, 0x00, 0x00 },
                 
-                // 9M fbmem,32M BIOS,19M stolen,VRAM 2048MB         
+                // fCursorMemorySize=9MB, fbmem=9MB, stolenmem=19MB, vram=2048MB         
                 "framebuffer-cursormem", Buffer() { 0x00, 0x00, 0x90, 0x00 },                                                                                                                                                                                                                                                                                                        
                 "framebuffer-fbmem", Buffer() { 0x00, 0x00, 0x90, 0x00 },                               
                 "framebuffer-stolenmem", Buffer() { 0x00, 0x00, 0x30, 0x01 },                "framebuffer-unifiedmem", Buffer() { 0x00, 0x00, 0x00, 0x80 },
                                  
-                // Connectors
+                // connectors
                 "framebuffer-pipecount", Buffer() { 0x02, 0x00, 0x00, 0x00 },                                "framebuffer-portcount", Buffer() { 0x02, 0x00, 0x00, 0x00 },
                 
                 // @1 HDMI                                                                                                                                                                                                                                                                                                 
                 "framebuffer-con1-enable", Buffer() { 0x01, 0x00, 0x00, 0x00 },
                 "framebuffer-con1-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },             
                 
-                // @2 HDMI Audio
+                // @2 HDMI
                 "framebuffer-con2-enable", Buffer() { 0x01, 0x00, 0x00, 0x00 },
                 "framebuffer-con2-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },
-                "framebuffer-con2-index", Buffer () { 0xFF, 0xFF, 0xFF, 0xFF }, 
                 
                 // Patch0
                 "framebuffer-patch0-enable", Buffer() { 0x01, 0x00, 0x00, 0x00 },
@@ -57,9 +56,9 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "IGPU", 0)
                 
                 // Inject EDID
                 "AAPL00,override-no-edid",Buffer ()
-                {   
+                {
                     0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x00,
-                    0x06, 0x10, 0x7C, 0x9C, 0x00, 0x00, 0x00, 0x00,
+                    0x06, 0x10, 0x2A, 0xA0, 0x4C, 0x37, 0x30, 0x32,
                     0x0A, 0x16, 0x01, 0x03, 0x80, 0x1D, 0x10, 0x78,
                     0x0A, 0xFA, 0x65, 0x96, 0x59, 0x55, 0x8F, 0x28,
                     0x1F, 0x50, 0x54, 0x00, 0x00, 0x00, 0x01, 0x01,
@@ -73,7 +72,7 @@ DefinitionBlock("", "SSDT", 2, "Y410P", "IGPU", 0)
                     0x47, 0x20, 0x44, 0x69, 0x73, 0x70, 0x6C, 0x61,
                     0x79, 0x0A, 0x20, 0x20, 0x00, 0x00, 0x00, 0xFE,
                     0x00, 0x4C, 0x50, 0x31, 0x34, 0x30, 0x57, 0x44,
-                    0x32, 0x2D, 0x54, 0x4C, 0x43, 0x31, 0x00, 0xBA,
+                    0x32, 0x2D, 0x54, 0x4C, 0x43, 0x31, 0x00, 0x23,
                 } 
             })
         }

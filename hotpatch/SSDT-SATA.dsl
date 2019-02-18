@@ -2,8 +2,8 @@
 // Adding SATA device
 
 DefinitionBlock("", "SSDT", 2, "Y410P", "SATA", 0)
-{
-    External(_SB_.PCI0, DeviceObj)
+{   
+    External (_SB.PCI0.SATA, DeviceObj)
     
     Method (_SB.PCI0.SATA._DSM, 4, NotSerialized)
     {

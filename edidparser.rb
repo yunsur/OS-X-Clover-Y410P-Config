@@ -64,21 +64,22 @@ bytes[8] = 06
 bytes[9] = 16
 
 puts "Setting Product Code to " + color("9C7C",RED)
-bytes[10] = 0x7C
-bytes[11] = 0x9C
+bytes[10] = 0x29
+bytes[11] = 0xa0
 
 puts "Setting Serial to " + color("0",GREEN)
-bytes[12] = 0
-bytes[13] = 0
-bytes[14] = 0
-bytes[15] = 0
+bytes[12] = 0x4c
+bytes[13] = 0x37
+bytes[14] = 0x30
+bytes[15] = 0x32
 
 puts "Setting Week of Manufacture to " + color("10",BLUE)
 bytes[16] = 10
 
 puts "Setting Year of Manufacture to " + color("2012",RED)
 bytes[17] = 22
-
+bytes[21] = 0x1D
+bytes[22] = 0x11
 checksum = (0x100-(bytes[0..126].reduce(:+) % 256)) % 256
 puts "Calculated checksum: " + color(("0x%x" % checksum),GREEN)
 puts "Original checksum: " + color(("0x%x" % bytes[127]),BLUE)

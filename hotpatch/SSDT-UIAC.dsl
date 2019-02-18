@@ -1,7 +1,7 @@
 
 // USBInjectAll configuration/override
 
-DefinitionBlock ("", "SSDT", 2, "Y410p", "UIAC-ALL", 0)
+DefinitionBlock ("", "SSDT", 2, "Y410p", "UIAC", 0)
 {
     Device(UIAC)
     {
