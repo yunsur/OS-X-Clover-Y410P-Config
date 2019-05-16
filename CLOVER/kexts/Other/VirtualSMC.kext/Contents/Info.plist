@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,7 +25,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -42,300 +42,6 @@
 	<string>9F2000</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>AGPM</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AGPM</string>
-			<key>IOClass</key>
-			<string>AGPMController</string>
-			<key>IONameMatch</key>
-			<string>AGPMEnabler</string>
-			<key>IOProviderClass</key>
-			<string>IOPlatformPluginDevice</string>
-			<key>Machines</key>
-			<dict>
-				<key>Mac-3CBD00234E554E41</key>
-				<dict>
-					<key>IGPU</key>
-					<dict>
-						<key>Heuristic</key>
-						<dict>
-							<key>BusyDownThresholdPercent</key>
-							<integer>50</integer>
-							<key>BusyUpThresholdPercent</key>
-							<integer>70</integer>
-							<key>DownStep</key>
-							<integer>1</integer>
-							<key>EnableOverride</key>
-							<integer>1</integer>
-							<key>EnableRingTableOverride</key>
-							<integer>1</integer>
-							<key>EvaluateDownInterval</key>
-							<integer>31250</integer>
-							<key>EvaluateUpInterval</key>
-							<integer>31250</integer>
-							<key>GT2Floor</key>
-							<integer>12</integer>
-							<key>GT3Floor</key>
-							<integer>7</integer>
-							<key>ID</key>
-							<integer>2</integer>
-							<key>IOBusynessSamplingInterval</key>
-							<integer>1</integer>
-							<key>NumOfRingTableOverride</key>
-							<integer>23</integer>
-							<key>NumOfRingTables</key>
-							<integer>3</integer>
-							<key>NumOfThresholdsForRingTables</key>
-							<integer>2</integer>
-							<key>RingOverrideTable0</key>
-							<array>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>9</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-							</array>
-							<key>RingOverrideTable1</key>
-							<array>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>9</integer>
-								<integer>10</integer>
-								<integer>11</integer>
-								<integer>13</integer>
-								<integer>14</integer>
-								<integer>15</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>29</integer>
-								<integer>30</integer>
-								<integer>31</integer>
-								<integer>33</integer>
-							</array>
-							<key>RingOverrideTable2</key>
-							<array>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>9</integer>
-								<integer>10</integer>
-								<integer>11</integer>
-								<integer>13</integer>
-								<integer>14</integer>
-								<integer>15</integer>
-								<integer>16</integer>
-								<integer>18</integer>
-								<integer>19</integer>
-								<integer>20</integer>
-								<integer>21</integer>
-								<integer>23</integer>
-								<integer>24</integer>
-								<integer>25</integer>
-								<integer>26</integer>
-								<integer>28</integer>
-								<integer>29</integer>
-								<integer>30</integer>
-								<integer>31</integer>
-								<integer>33</integer>
-							</array>
-							<key>StartingPstateForRingTableOverride</key>
-							<integer>11</integer>
-							<key>ThresholdsForRingOverrideTable0</key>
-							<array>
-								<integer>0</integer>
-								<integer>10</integer>
-							</array>
-							<key>ThresholdsForRingOverrideTable1</key>
-							<array>
-								<integer>5</integer>
-								<integer>15</integer>
-							</array>
-							<key>ThresholdsForRingOverrideTable2</key>
-							<array>
-								<integer>10</integer>
-								<integer>100</integer>
-							</array>
-							<key>UpStep</key>
-							<integer>2</integer>
-						</dict>
-						<key>SliceControl</key>
-						<integer>1</integer>
-						<key>control-id</key>
-						<integer>16</integer>
-						<key>max-power-state</key>
-						<integer>13</integer>
-					</dict>
-				</dict>
-				<key>Mac-7DF21CB3ED6977E5</key>
-				<dict>
-					<key>IGPU</key>
-					<dict>
-						<key>Heuristic</key>
-						<dict>
-							<key>BusyDownThresholdPercent</key>
-							<integer>50</integer>
-							<key>BusyUpThresholdPercent</key>
-							<integer>70</integer>
-							<key>DownStep</key>
-							<integer>1</integer>
-							<key>EnableOverride</key>
-							<integer>1</integer>
-							<key>EnableRingTableOverride</key>
-							<integer>1</integer>
-							<key>EvaluateDownInterval</key>
-							<integer>31250</integer>
-							<key>EvaluateUpInterval</key>
-							<integer>31250</integer>
-							<key>GT2Floor</key>
-							<integer>8</integer>
-							<key>GT3Floor</key>
-							<integer>4</integer>
-							<key>ID</key>
-							<integer>2</integer>
-							<key>IOBusynessSamplingInterval</key>
-							<integer>1</integer>
-							<key>NumOfRingTableOverride</key>
-							<integer>23</integer>
-							<key>NumOfRingTables</key>
-							<integer>3</integer>
-							<key>NumOfThresholdsForRingTables</key>
-							<integer>2</integer>
-							<key>RingOverrideTable0</key>
-							<array>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>9</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-								<integer>10</integer>
-							</array>
-							<key>RingOverrideTable1</key>
-							<array>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>9</integer>
-								<integer>10</integer>
-								<integer>11</integer>
-								<integer>13</integer>
-								<integer>14</integer>
-								<integer>15</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-								<integer>16</integer>
-							</array>
-							<key>RingOverrideTable2</key>
-							<array>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>8</integer>
-								<integer>9</integer>
-								<integer>10</integer>
-								<integer>11</integer>
-								<integer>13</integer>
-								<integer>14</integer>
-								<integer>15</integer>
-								<integer>16</integer>
-								<integer>18</integer>
-								<integer>19</integer>
-								<integer>20</integer>
-								<integer>21</integer>
-								<integer>23</integer>
-								<integer>24</integer>
-								<integer>25</integer>
-								<integer>26</integer>
-								<integer>28</integer>
-								<integer>29</integer>
-								<integer>30</integer>
-								<integer>31</integer>
-								<integer>33</integer>
-							</array>
-							<key>StartingPstateForRingTableOverride</key>
-							<integer>11</integer>
-							<key>ThresholdsForRingOverrideTable0</key>
-							<array>
-								<integer>0</integer>
-								<integer>10</integer>
-							</array>
-							<key>ThresholdsForRingOverrideTable1</key>
-							<array>
-								<integer>5</integer>
-								<integer>15</integer>
-							</array>
-							<key>ThresholdsForRingOverrideTable2</key>
-							<array>
-								<integer>10</integer>
-								<integer>100</integer>
-							</array>
-							<key>UpStep</key>
-							<integer>2</integer>
-						</dict>
-						<key>SliceControl</key>
-						<integer>1</integer>
-						<key>control-id</key>
-						<integer>16</integer>
-						<key>max-power-state</key>
-						<integer>13</integer>
-					</dict>
-				</dict>
-			</dict>
-		</dict>
 		<key>as.vit9696.VirtualSMC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
@@ -367,7 +73,9 @@
 			</array>
 			<key>IOInterruptSpecifiers</key>
 			<array>
-				<data>BgAAAAAAAAA=</data>
+				<data>
+				BgAAAAAAAAA=
+				</data>
 			</array>
 			<key>IOMatchCategory</key>
 			<string>IOACPIPlatformDevice</string>
@@ -383,75 +91,123 @@
 				<array>
 					<dict>
 						<key>attr</key>
-						<data>iA==</data>
+						<data>
+						iA==
+						</data>
 						<key>comment</key>
 						<string>Total fan number, this should be put to a plugin</string>
 						<key>name</key>
-						<data>Rk51bQ==</data>
+						<data>
+						Rk51bQ==
+						</data>
 						<key>type</key>
-						<data>dWk4IA==</data>
+						<data>
+						dWk4IA==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 					<dict>
 						<key>attr</key>
-						<data>gA==</data>
+						<data>
+						gA==
+						</data>
 						<key>comment</key>
 						<string>CPU plimit</string>
 						<key>name</key>
-						<data>TVNUYw==</data>
+						<data>
+						TVNUYw==
+						</data>
 						<key>type</key>
-						<data>dWk4IA==</data>
+						<data>
+						dWk4IA==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 					<dict>
 						<key>attr</key>
-						<data>gA==</data>
+						<data>
+						gA==
+						</data>
 						<key>comment</key>
 						<string>FAN plimit (supposedly)</string>
 						<key>name</key>
-						<data>TVNUZg==</data>
+						<data>
+						TVNUZg==
+						</data>
 						<key>type</key>
-						<data>dWk4IA==</data>
+						<data>
+						dWk4IA==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 					<dict>
 						<key>attr</key>
-						<data>gA==</data>
+						<data>
+						gA==
+						</data>
 						<key>comment</key>
 						<string>Memory plimit</string>
 						<key>name</key>
-						<data>TVNUbQ==</data>
+						<data>
+						TVNUbQ==
+						</data>
 						<key>type</key>
-						<data>dWk4IA==</data>
+						<data>
+						dWk4IA==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 					<dict>
 						<key>attr</key>
-						<data>gA==</data>
+						<data>
+						gA==
+						</data>
 						<key>comment</key>
 						<string>This should be 1 on laptops, and is overriden by sensors</string>
 						<key>name</key>
-						<data>QkFUUA==</data>
+						<data>
+						QkFUUA==
+						</data>
 						<key>type</key>
-						<data>ZmxhZw==</data>
+						<data>
+						ZmxhZw==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 					<dict>
 						<key>attr</key>
-						<data>gA==</data>
+						<data>
+						gA==
+						</data>
 						<key>comment</key>
 						<string>Only MacPros have custom illumination controllers</string>
 						<key>name</key>
-						<data>THNOTQ==</data>
+						<data>
+						THNOTQ==
+						</data>
 						<key>type</key>
-						<data>dWk4IA==</data>
+						<data>
+						dWk4IA==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 				</array>
 				<key>GenericDesktopV1</key>
@@ -466,54 +222,86 @@
 				<array>
 					<dict>
 						<key>attr</key>
-						<data>gA==</data>
+						<data>
+						gA==
+						</data>
 						<key>comment</key>
 						<string>GPU plimit</string>
 						<key>name</key>
-						<data>TVNUZw==</data>
+						<data>
+						TVNUZw==
+						</data>
 						<key>type</key>
-						<data>dWk4IA==</data>
+						<data>
+						dWk4IA==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 				</array>
 				<key>GenericV2</key>
 				<array>
 					<dict>
 						<key>attr</key>
-						<data>gA==</data>
+						<data>
+						gA==
+						</data>
 						<key>comment</key>
 						<string>E plimit (???)</string>
 						<key>name</key>
-						<data>TVNUZQ==</data>
+						<data>
+						TVNUZQ==
+						</data>
 						<key>type</key>
-						<data>dWk4IA==</data>
+						<data>
+						dWk4IA==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 					<dict>
 						<key>attr</key>
-						<data>gA==</data>
+						<data>
+						gA==
+						</data>
 						<key>comment</key>
 						<string>I plimit (???)</string>
 						<key>name</key>
-						<data>TVNUaQ==</data>
+						<data>
+						TVNUaQ==
+						</data>
 						<key>type</key>
-						<data>dWk4IA==</data>
+						<data>
+						dWk4IA==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 					<dict>
 						<key>attr</key>
-						<data>gA==</data>
+						<data>
+						gA==
+						</data>
 						<key>comment</key>
 						<string>J plimit (???)</string>
 						<key>name</key>
-						<data>TVNUag==</data>
+						<data>
+						TVNUag==
+						</data>
 						<key>type</key>
-						<data>dWk4IA==</data>
+						<data>
+						dWk4IA==
+						</data>
 						<key>value</key>
-						<data>AA==</data>
+						<data>
+						AA==
+						</data>
 					</dict>
 				</array>
 			</dict>
@@ -522,79 +310,137 @@
 				<key>GenericV1</key>
 				<dict>
 					<key>branch</key>
-					<data>ajUyAAAAAAA=</data>
+					<data>
+					ajUyAAAAAAA=
+					</data>
 					<key>hwname</key>
-					<data>c21jLXBpa2V0b24A</data>
+					<data>
+					c21jLXBpa2V0b24A
+					</data>
 					<key>platform</key>
-					<data>ajUyAAAAAAA=</data>
+					<data>
+					ajUyAAAAAAA=
+					</data>
 					<key>rev</key>
-					<data>AXQPAAAE</data>
+					<data>
+					AXQPAAAE
+					</data>
 					<key>revfb</key>
-					<data>AXQPAAAE</data>
+					<data>
+					AXQPAAAE
+					</data>
 					<key>revfu</key>
-					<data>AXQPAAAE</data>
+					<data>
+					AXQPAAAE
+					</data>
 				</dict>
 				<key>GenericV2</key>
 				<dict>
 					<key>branch</key>
-					<data>ajUyAAAAAAA=</data>
+					<data>
+					ajUyAAAAAAA=
+					</data>
 					<key>hwname</key>
-					<data>c21jLWh1cm9ucml2ZXIA</data>
+					<data>
+					c21jLWh1cm9ucml2ZXIA
+					</data>
 					<key>platform</key>
-					<data>ajUyAAAAAAA=</data>
+					<data>
+					ajUyAAAAAAA=
+					</data>
 					<key>rev</key>
-					<data>AigPAAAH</data>
+					<data>
+					AigPAAAH
+					</data>
 					<key>revfb</key>
-					<data>AigPAAAH</data>
+					<data>
+					AigPAAAH
+					</data>
 					<key>revfu</key>
-					<data>AigPAAAH</data>
+					<data>
+					AigPAAAH
+					</data>
 				</dict>
 				<key>Mac-27ADBB7B4CEE8E61</key>
 				<dict>
 					<key>branch</key>
-					<data>ajE2ajE3AAA=</data>
+					<data>
+					ajE2ajE3AAA=
+					</data>
 					<key>platform</key>
-					<data>ajE3AAAAAAA=</data>
+					<data>
+					ajE3AAAAAAA=
+					</data>
 					<key>rev</key>
-					<data>AhUPAAAH</data>
+					<data>
+					AhUPAAAH
+					</data>
 					<key>revfb</key>
-					<data>AhUPAAAH</data>
+					<data>
+					AhUPAAAH
+					</data>
 					<key>revfu</key>
-					<data>AhUPAAAH</data>
+					<data>
+					AhUPAAAH
+					</data>
 				</dict>
 				<key>Mac-42FD25EABCABB274</key>
 				<dict>
 					<key>branch</key>
-					<data>ajc4ajc4YW0=</data>
+					<data>
+					ajc4ajc4YW0=
+					</data>
 					<key>platform</key>
-					<data>ajc4AAAAAAA=</data>
+					<data>
+					ajc4AAAAAAA=
+					</data>
 					<key>rev</key>
-					<data>AiIPAAAW</data>
+					<data>
+					AiIPAAAW
+					</data>
 					<key>revfb</key>
-					<data>AiIPAAAW</data>
+					<data>
+					AiIPAAAW
+					</data>
 					<key>revfu</key>
-					<data>AiIPAAAW</data>
+					<data>
+					AiIPAAAW
+					</data>
 				</dict>
 				<key>Mac-7DF21CB3ED6977E5</key>
 				<dict>
 					<key>branch</key>
-					<data>ajc4ajc4YW0=</data>
+					<data>
+					ajc4ajc4YW0=
+					</data>
 					<key>hwname</key>
-					<data>c21jLXBpa2V0b24A</data>
+					<data>
+					c21jLXBpa2V0b24A
+					</data>
 					<key>platform</key>
-					<data>ajc4AAAAAAA=</data>
+					<data>
+					ajc4AAAAAAA=
+					</data>
 					<key>rev</key>
-					<data>AiIPAAAW</data>
+					<data>
+					AiIPAAAW
+					</data>
 					<key>revfb</key>
-					<data>AiIPAAAW</data>
+					<data>
+					AiIPAAAW
+					</data>
 					<key>revfu</key>
-					<data>AiIPAAAW</data>
+					<data>
+					AiIPAAAW
+					</data>
 				</dict>
 			</dict>
 			<key>_STA</key>
 			<integer>11</integer>
 			<key>name</key>
-			<data>QVBQMDAwMQA=</data>
+			<data>
+			QVBQMDAwMQA=
+			</data>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
